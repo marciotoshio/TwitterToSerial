@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EC321DC2-4B06-4107-A0E7-D970B3A2E821}</ProjectGuid>
+    <ProjectGuid>{C3B4C0E9-DC31-45FB-B06B-CAEB44270E48}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TwitterToSerialTests</RootNamespace>
@@ -55,11 +55,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerialTests.cs" />
-    <Compile Include="TwitterTests.cs" />
+    <Compile Include="HelperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TwitterToSerialLib\TwitterToSerialLib.csproj">
+      <Project>{86BE6536-D974-426E-8D4B-C1BC39C8BE3F}</Project>
+      <Name>TwitterToSerialLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
